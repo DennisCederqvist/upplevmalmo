@@ -143,6 +143,7 @@ main {
 .contact-form label {
   text-align: left;
   font-weight: bold;
+  
 }
 
 .contact-form input,
@@ -246,7 +247,6 @@ main {
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
 }
- 
 
 
 .container {
@@ -322,7 +322,10 @@ main {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-    justify-content: center;
+    max-width: 750px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: start;
 }
 
 .info h2 {
@@ -331,8 +334,13 @@ main {
 }
 
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   padding: 15px;
+  max-width: 200px;
+  height: 200px;
   color: black;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
